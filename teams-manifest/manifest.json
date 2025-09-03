@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "12345678-1234-1234-1234-123456789012",
+  "developer": {
+    "name": "Teams Campfire",
+    "websiteUrl": "https://your-domain.com",
+    "privacyUrl": "https://your-domain.com/privacy",
+    "termsOfUseUrl": "https://your-domain.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Campfire",
+    "full": "Teams Campfire Meeting Experience"
+  },
+  "description": {
+    "short": "Virtual campfire for team meetings",
+    "full": "Create a cozy virtual campfire atmosphere for your Microsoft Teams meetings. Perfect for icebreakers, retrospectives, and team bonding sessions."
+  },
+  "accentColor": "#FF6B35",
+  "bots": [],
+  "composeExtensions": [],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://your-domain.com/config",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupChat"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "devicePermissions": [
+    "media"
+  ],
+  "validDomains": [
+    "your-domain.com"
+  ],
+  "webApplicationInfo": {
+    "id": "87654321-4321-4321-4321-210987654321",
+    "resource": "https://graph.microsoft.com/"
+  },
+  "meetingExtensionDefinition": {
+    "scenes": [
+      {
+        "id": "abcdef12-3456-7890-abcd-ef1234567890",
+        "name": "Campfire",
+        "file": "campfire-scene.json",
+        "preview": "campfire-preview.png",
+        "maxAudience": 50,
+        "seatsReservedForOrganizersOrPresenters": 0
+      }
+    ],
+    "supportsStreaming": true
+  }
+}
