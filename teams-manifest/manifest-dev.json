@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0-dev",
+  "id": "45f36eff-ffdf-44d5-b0c1-c22b8099b82b",
+  "developer": {
+    "name": "Teams Campfire (Development)",
+    "websiteUrl": "https://1278d12ad9be.ngrok-free.app",
+    "privacyUrl": "https://1278d12ad9be.ngrok-free.app/privacy",
+    "termsOfUseUrl": "https://1278d12ad9be.ngrok-free.app/terms"
+  },
+  "icons": {
+    "color": "campfire-logo.png",
+    "outline": "campfire-logo.png"
+  },
+  "name": {
+    "short": "Campfire Dev",
+    "full": "Teams Campfire Meeting Experience (Development)"
+  },
+  "description": {
+    "short": "Virtual campfire for team meetings (Development)",
+    "full": "Create a cozy virtual campfire atmosphere for your Microsoft Teams meetings. Perfect for icebreakers, retrospectives, and team bonding sessions. (Development Version)"
+  },
+  "accentColor": "#FF6B35",
+  "bots": [],
+  "composeExtensions": [],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://1278d12ad9be.ngrok-free.app/config",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupChat"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "devicePermissions": [
+    "media"
+  ],
+  "validDomains": [
+    "1278d12ad9be.ngrok-free.app"
+  ],
+  "webApplicationInfo": {
+    "id": "87654321-4321-4321-4321-210987654321",
+    "resource": "https://graph.microsoft.com/"
+  }
+}
